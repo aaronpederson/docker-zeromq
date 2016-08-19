@@ -1,0 +1,22 @@
+---
+dependencies:
+  - role: telusdigital.apt-repository
+    repository_key: "0xb9316a7bc7917b12"
+    repository_url: "deb http://ppa.launchpad.net/chris-lea/zeromq/ubuntu {{ ansible_distribution_release }} main"
+    when: ansible_distribution_release == 'trusty'
+
+galaxy_info:
+  author: "Chris Olstrom"
+  company: "TELUS digital"
+  description: "ZeroMQ - Low-level networking library for building connected software."
+  license: MIT
+  platforms:
+    - name: Ubuntu
+      versions:
+      - precise
+      - trusty
+      - utopic
+      - xenial
+  categories:
+    - development
+    - networking
