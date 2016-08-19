@@ -1,9 +1,5 @@
 ---
 dependencies:
-  - role: telusdigital.apt-repository
-    repository_key: "0xb9316a7bc7917b12"
-    repository_url: "deb http://ppa.launchpad.net/chris-lea/zeromq/ubuntu {{ ansible_distribution_release }} main"
-    when: ansible_distribution_release == 'trusty'
 
 galaxy_info:
   author: "Chris Olstrom"

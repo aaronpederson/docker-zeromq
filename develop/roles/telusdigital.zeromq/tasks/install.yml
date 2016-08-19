@@ -4,14 +4,5 @@
     state: latest
     pkg: "{{ item }}"
   with_items:
-    - libzmq3
-    - libzmq3-dev
-  when: ansible_distribution_release == 'trusty'
-
-- name: Install Packages | apt
-  apt:
-    state: latest
-    pkg: "{{ item }}"
-  with_items:
     - libzmq5
   when: ansible_distribution_release == 'xenial'
