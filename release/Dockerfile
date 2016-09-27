@@ -1,4 +1,4 @@
 FROM aaronpederson/ubuntu
 
 RUN apt-get update
-RUN yes | ap-get install libzmq5
+RUN yes | apt-get install libzmq5
